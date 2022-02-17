@@ -15,7 +15,7 @@ def sample(l, n = 1):
     return result
 
 def generate_buzz():
-    buzz_terms = sample(buzz, 2)
+    buzz_terms = sample(buzz, 5)
     phrase = ' '.join([sample(adjectives), buzz_terms[0], sample(adverbs),
         sample(verbs), buzz_terms[1]])
     return phrase.title()
